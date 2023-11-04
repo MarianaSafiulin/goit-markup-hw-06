@@ -28,9 +28,9 @@ ol {
 
 .container {
   width: 1158px;
-  display: block;
+  
   margin: 0 auto;
-  padding: 0 15px 0 15px;
+  padding: 0 15px;
 }
 
 .header-section {
@@ -258,7 +258,9 @@ ol {
   align-items: center;
   justify-content: center;
   margin-bottom: 8px;
+
 }
+@media 
 
 .advantages {
   padding-top: 120px;
@@ -287,10 +289,12 @@ ol {
   list-style: none;
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .advantages-list {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
+  position: relative;
 }
 
 .advantages-name {
