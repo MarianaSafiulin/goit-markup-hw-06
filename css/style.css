@@ -27,10 +27,24 @@ ol {
 }
 
 .container {
-  width: 1158px;
-  
+  width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .header-section {
@@ -258,9 +272,7 @@ ol {
   align-items: center;
   justify-content: center;
   margin-bottom: 8px;
-
 }
-@media 
 
 .advantages {
   padding-top: 120px;
