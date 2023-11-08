@@ -581,6 +581,7 @@ ol {
 @media screen and (min-width: 768px) {
   .portfolio-item {
     flex-direction: row;
+    column-gap: 16px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -682,7 +683,6 @@ ol {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
   }
 }
 @media screen and (min-width: 1158px) {
