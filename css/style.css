@@ -27,7 +27,7 @@ ol {
 }
 
 .container {
-  width: 367px;
+  width: auto
   margin-right: auto;
   margin-left: auto;
   padding-left: 16px;
@@ -99,9 +99,20 @@ ol {
   height: 100%;
   z-index: 9999999999999999;
   background-color: #FCFCFC;
+transform: translateX(100%);}
+
+  .mobile-menu-list{
+    list-style: none;
+  }
+  
+.mobile-menu-container {
+  position: relative;
+
 }
 .mobile-menu-close-btn{
-  
+  position: absolute;
+  top: 0;
+  right: 0;
   background-color: transparent;
   padding: 0;
   line-height: 0;
@@ -117,15 +128,20 @@ ol {
 
 
 }
+.mobile-menu-close-btn-icon{
+  width: 8px;
+  height: 8px;
 
-/* .nav-menu {
+}
+
+ .nav-menu {
   display: flex;
   gap: 40px;
   align-items: center;
   position: relative;
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 .nav-menu {
   display: none;
 }
@@ -211,7 +227,7 @@ ol {
   background-color: #404bbf;
   border-radius: 2px;
 }
-/* .address {
+ .address {
   font-style: normal;
   display: flex;
   gap: 40px;
@@ -228,7 +244,7 @@ ol {
   display: flex;
   gap: 40px;
   transition: color 300ms ease;
-}  */
+}  
 
 .address {
   display: none;
@@ -648,12 +664,14 @@ ol {
   column-gap: 24px;
 }
 
-@media screen and (min-width: 768px) {
-  .portfolio-item {
+@media screen and (min-width: 768px){
+.portfolio {
     flex-direction: row;
-    column-gap: 16px;
-  }
-}
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 64px;}}
+
 @media screen and (min-width: 1158px) {
   .portfolio-item {
     flex-direction: row;
@@ -750,9 +768,12 @@ ol {
 }
 @media screen and (min-width: 768px) {
   .container-footer-container {
+    
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    column-gap: 24px;
+    width: 580px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -768,7 +789,6 @@ ol {
   display: flex;
 }
 
-.
 .footer-logo {
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
@@ -783,7 +803,13 @@ ol {
   display: inline-block;
   margin-bottom: 16px;
 }
-.footer-logo-italic {
+
+@media screen and (min-width:  768px) { 
+  .footer-content-logo{
+    width: 264px;
+  }
+}
+.footer-logo-italic { 
   color: #f4f4fd;
 }
 .footer-text {
@@ -811,8 +837,12 @@ ol {
 .footer-svg {
   fill: #f4f4fd;
 }
+@media screen and (min-width:  768px) { 
 .footer-media-form {
-}
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}}
 
 .footer-media-text {
   font-weight: 500;
