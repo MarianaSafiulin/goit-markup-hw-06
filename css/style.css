@@ -785,7 +785,7 @@ transform: translateX(100%);}
 }
 @media screen and (min-width: 1158px) {
   .container-footer-container {
-   
+   width: 1158px;
       display: flex;
     
       align-items: baseline;
