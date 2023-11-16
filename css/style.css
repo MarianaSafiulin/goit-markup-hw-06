@@ -891,6 +891,13 @@ ol {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .footer-form {
+    
+    flex-direction: initial;
+    
+  }
+}
 @media screen and (min-width: 1158px) {
   .footer-form {
     flex-direction: inherit;
