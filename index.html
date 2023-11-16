@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body>
+  
     <header class="header-section">
       <div class="container header-container">
         <nav class="navigation">
@@ -601,23 +601,71 @@
       </div>
     </div>
     <!---------- mobile menu---------->
-    <div class="mobile-menu">
-      <div class="container mobile-menu-container">
+    <div class="mobile-menu is-open">
+      
         <button class="mobile-menu-close-btn" type="button" >
-          <svg class="mobile-menu-close-btn-icon" width="24" height="24">
+          <svg class="mobile-menu-close-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-2-1"></use>
           </svg>
 
         </button>
-        <ul>
-          <li class="mobile-menu-list"><a href="">Studio</a></li>
-          <li class="mobile-menu-list"><a href="">Portfolio</a></li>
-          <li class="mobile-menu-list"><a href="">Contacts</a></li>
-          
+        <div class="mobile-menu-container">
+        <ul class="mobile-menu-item">
+          <li class="mobile-menu-list"><a class="mobile-menu-address-link" href="">Studio</a></li>
+          <li class="mobile-menu-list"><a class="mobile-menu-address-link" href="">Portfolio</a></li>
+          <li class="mobile-menu-list"><a  class="mobile-menu-address-link" href="">Contacts</a></li>
+        
         </ul>
       </div>
-
-
+      <div class="mobile-menu-adress">
+        <ul class="mobile-menu-address-item">
+          <li class="mobile-menu-address-list">
+            <a class="mobile-menu-address-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="mobile-menu-address-list">
+            <a class="mobile-menu-address-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-menu-social">
+        <ul class="mobile-container-svg">
+        <li class="svg-social-media">
+          <a class="container-svg-item" href="">
+            <svg class="svg-icons-team" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="svg-social-media">
+          <a class="container-svg-item" href="">
+            <svg class="svg-icons-team" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="svg-social-media">
+          <a class="container-svg-item" href="">
+            <svg class="svg-icons-team" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook3"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="svg-social-media">
+          <a class="container-svg-item" href="">
+            <svg class="svg-icons-team" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin4"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      </div>
     </div>
+
+
+    
   </body>
 </html>
