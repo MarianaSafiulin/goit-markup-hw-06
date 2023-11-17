@@ -141,6 +141,11 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+.mobile-menu-address-link-first{
+  text-decoration: none;
+
+  color: var(--OCEAN, #404BBF);
+}
 
 .mobile-menu-container {
   position: relative;
